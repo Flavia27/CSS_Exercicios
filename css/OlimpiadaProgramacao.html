@@ -16,14 +16,19 @@
             font-family: 'Oswald', sans-serif;
             background-color: lightgray;
         }
-
+       
+        @media(max-width: 3000px){
         .cabecalho {
-            background: #333;
+            background: url(cabecario.jpg) left top no-repeat, url(cabecario.jpg) right bottom no-repeat, url(cabecario.jpg) left top repeat;
+            padding: 15px;
+            background-size: 80px, 130px, auto;
             border-bottom: solid 5px #4faddb;
-            height: 80px;
-            box-sizing: content-box;
+            height: 90px;
+            box-sizing: auto;
+            text-shadow: rebeccapurple;
         }
-
+    }
+        
         .logo {
             display: inline-block;
             height: 80px;
@@ -60,7 +65,7 @@
         .menu li {
             display: inline-block;
         }
-
+        
         .cabecalho a {
             text-decoration: none;
             color: #eee;
@@ -77,10 +82,11 @@
             padding: 25px;
         }
 
+
         .menu a:hover,
         .menu a.selected {
             background-color: #4faddb;
-            color: #000;
+            color: aliceblue;
         }
 
         .botao {
@@ -90,8 +96,13 @@
         }
 
         .destaque {
-            background: #f50a31;
-            color: #fff;
+            background: white;
+            color: red;
+        }
+        .historia{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        
         }
 
         @media(min-width: 679px) {
@@ -111,12 +122,22 @@
                 display: none;
             }
         }
+        .foto{
+            height: 300px;
+            padding: 15px;
+        }
+        h1{
+            color: blueviolet;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        }
     </style>
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="logo">
+            <img src="logo.jpg" alt="">
             <a href="#inicio">
             </a>
         </div>
@@ -128,13 +149,33 @@
                 <li>
                     <a href="#inicio">Início</a>
                 </li>
-               
+               <li>
+                   <a href="#pagina">Página 2</a>
+               </li>
             </ul>
         </nav>
         <aside class="autenticacao">
             <a href="#login">Login</a>
             <a href="#registar" class="botao destaque">Registrar</a>
         </aside>
+    </header>
+    <header class="historia">
+        <p>
+            As olimpíadas de Programação surgiram em 2018 como uma forma de integrar o curso de programação com outras áreas
+             e colocar em prática o que é aprendido em salas de aula, ou no dia-a-dia.
+             Nessa competição os alunos participam de palestras e atividades relacionadas as áreas da informática e desenvolvimento de sistemas. Desde
+             então, já possuímos quatro equipes campeãs. 
+        </p>
+        <h1>Conheçam os nossos Ganhadores</h1>
+        <img src="primeira equipe.jpg" alt="Primeiros ganhadores" class="foto"/>
+        <p>Primeira Equipe de Ganhadores</p>
+        <img src="segunda equipe.jpg" alt="Segunda Equipe" class="foto">
+        <p>Segunda Equipe de Ganhadores</p>
+        <img src="Terceira Equipe.jpg" alt="Terceira Equipe" class="foto"/>
+        <p>Terceira Equipe</p>
+        <img src="quarta equipe.jpg" alt="Quarta Equipe" class="foto"/>
+        <p>Quarta Equipe</p>
+        
     </header>
 
     
