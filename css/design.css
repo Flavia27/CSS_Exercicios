@@ -1,0 +1,43 @@
+#hh{
+    color: blueviolet;
+}
+span{
+    color: antiquewhite;
+}
+p{
+    color: aqua;
+}
+ol{
+    color: brown;
+}
+ul{
+    color: green;
+}
+li{
+    color: gray;
+}
+div{
+    color: crimson;
+    padding: 2px;
+    border: yellow;
+    margin: 5px;
+    padding-bottom: 1px;
+    border-top: 15px;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#exemplo{
+    background-color: orange;
+}
+#d1{
+    background-color: chartreuse;
+}
+#d2{
+    background-color: darkred;
+}
+#aninhado{
+    background-color: darkorange;
+}
+#d3{
+    background-color: darkgrey;
+}
